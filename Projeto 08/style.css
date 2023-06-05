@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+}
+
+:root {
+  --ff-main: 'Mulish', sans-serif;
+  --fc-title: #b52184;
+  --fc-text: #312d64;
+  --bg-cards: #ffffff;
+  font-size: 62.5%;
+}
+
+.hero {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #f9f4fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  color: var(--fc-title);
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-top: 1.7rem;
+}
+
+main p {
+  font-size: 2rem;
+  line-height: 25px;
+  color: var(--fc-text);
+  font-weight: 600;
+  padding: 0.5rem 0 3.5rem 0;
+}
+
+main .arrow {
+  padding-bottom: 9.3rem;
+}
+
+section {
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+
+  padding: 3.9rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+section .cards {
+  background: var(--bg-cards);
+
+  padding: 2.6rem 6rem 2.6rem 2.6rem;
+
+  box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
+  border-radius: 19.8646px;
+}
+
+section h2 {
+  color: var(--fc-title);
+  font-size: 2.9rem;
+  line-height: 3.7rem;
+
+  padding: 3.3rem 0rem 2rem 0rem;
+}
+
+section p {
+  color: var(--fc-text);
+  font-size: 1.6rem;
+  line-height: 20px;
+}
+
+#form {
+  background: #f9f4fb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#form img {
+  display: none;
+}
+
+#form label {
+  color: var(--fc-title);
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+input {
+  width: 35rem;
+  height: 4.8rem;
+  border: 1.5px solid #312d64;
+  border-radius: 16px;
+  padding: 1.6rem;
+  display: flex;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-top: 4.3rem;
+}
+
+#name::placeholder {
+  background-image: url(assets/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.1rem;
+
+  display: flex;
+
+  font-family: var(--ff-main);
+  padding-left: 3rem;
+
+  font-size: 1.6rem;
+  color: #312d64;
+}
+
+#mail::placeholder {
+  background-image: url(assets/mail.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.1rem;
+
+  display: flex;
+
+  font-family: var(--ff-main);
+  padding-left: 3rem;
+
+  font-size: 1.6rem;
+  color: #312d64;
+}
+
+textarea::placeholder {
+  font-size: 1.6rem;
+  color: #312d64;
+}
+
+textarea {
+  width: 35rem;
+  height: 12.6rem;
+
+  border: 1.5px solid #312d64;
+  border-radius: 16px;
+
+  padding: 1.2rem 1.6rem 1.6rem;
+  resize: none;
+}
+
+button {
+  width: 16rem;
+  padding: 1rem 1.6rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  border-radius: 16px;
+
+  color: #ffffff;
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+#button {
+  display: none;
+}
+
+footer p {
+  color: #ffffff;
+  padding: 3.2rem 1.6rem 3.2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  padding: 3.2rem 1.6rem;
+}
+
+/* Breakpoint  */
+
+@media (min-width: 1440px) {
+  .hero {
+    max-width: 144rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 13.6rem;
+  }
+
+  .hero .main {
+    order: 1;
+  }
+
+  .hero .astrounaut {
+    order: 2;
+  }
+
+  .main {
+    margin: 31rem 0 0 11rem;
+  }
+
+  .main .arrow {
+    margin-top: 18rem;
+    padding: 0;
+  }
+
+  .main h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+  }
+
+  .main p {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    padding: 0;
+  }
+
+  .hero .astrounaut img {
+    width: 72rem;
+    height: 73rem;
+    padding: 0rem 3rem 10.4rem 2.8rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  section .cards {
+    width: 36.6rem;
+  }
+
+  #form {
+    display: flex;
+    align-items: center;
+    gap: 9.2rem;
+    padding: 0;
+    height: 62.2rem;
+    margin: 0 auto;
+    background: url(./assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #form form {
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+
+  #form .stars {
+    flex: 1;
+  }
+}
